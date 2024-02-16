@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:kutuku/onboarding/controller/onboarding_controller.dart';
 
@@ -24,7 +25,7 @@ class OnboardingDots extends StatelessWidget {
                     width: controller.currentPage == index ? 20 : 6,
                     height: 6,
                     decoration: BoxDecoration(
-                      color: ColorManager.primary,
+                      color: Theme.of(context).colorScheme.primary,
                       borderRadius: BorderRadius.circular(10),
                     ),
                   )

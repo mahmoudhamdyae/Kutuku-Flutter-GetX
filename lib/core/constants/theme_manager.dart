@@ -1,22 +1,37 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import 'color_manager.dart';
+import 'color_schemes.g.dart';
 
-ThemeData getApplicationTheme() {
+ThemeData getLightApplicationTheme() {
   return ThemeData(
-    primaryColor: ColorManager.primary,
     useMaterial3: true,
     appBarTheme: const AppBarTheme(
         centerTitle: true,
-        color: ColorManager.primary,
         elevation: 4.0,
-        shadowColor: ColorManager.primary,
     ),
-    colorScheme: ColorScheme.fromSeed(seedColor: ColorManager.primary),
+    colorScheme: lightColorScheme,
     textTheme: const TextTheme(),
     fontFamily: 'PlayfairDisplay',
     buttonTheme: const ButtonThemeData(
       textTheme: ButtonTextTheme.primary
     )
+  );
+}
+
+ThemeData getDarkApplicationTheme() {
+  return ThemeData(
+      useMaterial3: true,
+      appBarTheme: const AppBarTheme(
+        centerTitle: true,
+        elevation: 4.0,
+      ),
+      colorScheme: darkColorScheme,
+      textTheme: const TextTheme(),
+      fontFamily: 'PlayfairDisplay',
+      buttonTheme: const ButtonThemeData(
+          textTheme: ButtonTextTheme.primary
+      )
   );
 }

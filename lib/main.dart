@@ -24,7 +24,8 @@ class MyApp extends StatelessWidget {
 
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: getApplicationTheme(),
+      theme: getLightApplicationTheme(),
+      darkTheme: getDarkApplicationTheme(),
       home: const OnboardingScreen(),
       routes: routes,
       translations: AppTranslation(),
