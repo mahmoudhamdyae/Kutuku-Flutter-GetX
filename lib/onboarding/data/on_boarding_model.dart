@@ -1,3 +1,4 @@
+import 'package:get/get.dart';
 import 'package:kutuku/onboarding/constants/onboarding_image_asset.dart';
 
 class OnBoardingModel {
@@ -14,19 +15,19 @@ class OnBoardingModel {
   static List<OnBoardingModel> getItems() {
     return [
       OnBoardingModel._(
-        title: 'Various Collection s Of The Latest Products',
+        title: 'on_boarding_1_title'.tr,
         image: OnboardingImageAsset.onBoardingImageOne,
-        body: 'Urna amet, suspendisse ullamcorper ac elit diam facilisis cursus vestibulum.'
+        body: 'on_boarding_1_desc'.tr
       ),
       OnBoardingModel._(
-          title: 'Complete Collection Of Colors And Sizes',
+          title: 'on_boarding_2_title'.tr,
           image: OnboardingImageAsset.onBoardingImageTwo,
-          body: 'Urna amet, suspendisse ullamcorper ac elit diam facilisis cursus vestibulum.'
+          body: 'on_boarding_2_desc'.tr
       ),
       OnBoardingModel._(
-          title: 'Find The Most Suitable Outfit For You',
+          title: 'on_boarding_3_title'.tr,
           image: OnboardingImageAsset.onBoardingImageThree,
-          body: 'Urna amet, suspendisse ullamcorper ac elit diam facilisis cursus vestibulum.'
+          body: 'on_boarding_3_desc'.tr
       ),
     ];
   }

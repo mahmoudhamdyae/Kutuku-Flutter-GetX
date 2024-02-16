@@ -24,7 +24,7 @@ class OnboardingScreen extends StatelessWidget {
                 onPressed: () {
                   Get.offAllNamed(AppRoute.login);
                 },
-                child: const Text('Skip'),
+                child: Text('skip'.tr),
               ),
             ),
             const Gap(12.0),
@@ -48,7 +48,7 @@ class OnboardingScreen extends StatelessWidget {
                           child: Padding(
                             padding: const EdgeInsets.symmetric(vertical: 16.0),
                             child: Text(
-                              controller.currentPage != OnBoardingModel.getItems().length - 1 ? 'Next' : 'Get Started',
+                              controller.currentPage != OnBoardingModel.getItems().length - 1 ? 'next'.tr : 'get_started'.tr,
                             ),
                           ),
                         );
